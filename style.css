@@ -1,0 +1,490 @@
+/*
+a. University name : UNIKL MIIT
+b. Student's name and ID : NOR ALIA SYUHADA BINTI SAMSURI [52052119054]
+c. Title of Mini Project : KPOP STORE WEBSITE
+d. Lecturer Name  : NORSHAHARIZAN PUTEH 
+e. Submission date :  2 JULY 2020
+*/
+
+* { /*apply to all page*/
+  box-sizing: border-box; /*defines how the width and height of an element are calculated*/
+}
+
+/*apply to all background*/
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1; /*light grey*/
+}
+
+/*NAVIGATION*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: red;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: red;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+/*header 1 that has class "a"*/
+h2.a {
+  font-family: papyrus;
+  text-align: center;
+}
+
+/* Style "a" paragraph */
+p.a { 
+  font-style: oblique;
+}
+
+/* Style "b" paragraph */
+p.b {
+  text-align: center; /*center text*/
+}
+
+/* Style class "c" paragraph */
+p.c {
+  font-weight: bold; /*sets how thick or thin characters in text should be displayed*/
+  text-align: center;
+  color: red;
+}
+
+h3.a { /*events part*/
+  font-style: italic;
+  color: #800000; /*maroon font*/
+}
+
+/*events promotion*/
+h1.promo {
+  color: red;
+}
+
+/*contact part*/
+#email {
+  width: 700px; 
+  padding: 12px 20px;
+}
+
+/*contact part*/
+#text {
+  width: 700px; 
+  height: 250px;
+  padding: 12px 20px;
+}
+
+/*feedback part*/
+#name { 
+  width: 700px; 
+  padding: 12px 20px;
+}
+
+/*a href*/
+a:link { /*not yet visit*/
+  color: #4d4dff; /*font become pink*/
+  text-decoration: none; /*it will clear the underline in the text*/
+}
+
+a:visited { /*link that has been visited*/
+  color:#dd99ff; /*font become purple*/
+  text-decoration: none; /*it will clear the underline in the text*/
+}
+
+a:hover { /*link hover*/
+  color: red; /*font become red*/
+  text-decoration: underline; /*text will be underline*/
+}
+
+/*header*/
+.header {
+  padding: 30px; /*generate space around an element's content, inside of any defined borders*/
+  text-align: center;
+  background: #1E1E1E;
+}
+
+/*class "header" in h1*/
+.header h1 {
+  font-size: 50px;
+}
+
+/*style top navigation bar*/
+.topnav {
+  overflow: hidden; /*it follow the height of text*/
+  background: linear-gradient(to right, #cc33ff 20%, #ff6666 100%); /*making background become mutiply colour*/
+}
+
+/*for "topnav a" class*/
+.topnav a {
+  float: left;
+  display: block; /*displays an element as a block element. It starts on a new line, and takes up the whole width*/
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; /*no underline*/
+  width: 12.5%;
+}
+
+.column {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+
+/*change color when hover*/
+.topnav a:hover {
+  background-color: #f2f2f2; /*light grey*/
+  color: black;
+}
+
+/*navigation bar "top nav a" when active: HOME part*/
+.topnav a.active {
+  color: white;
+  background-color: red;
+}
+
+/*Create two unequal columns that floats next to each other*/
+/*left column*/
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/*right column*/
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1; /*light grey*/
+  padding-left: 20px;
+}
+
+/*Create two unequal columns that floats next to each other*/
+.column1 {
+  float: left;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/*left column*/
+.left {
+  width: 15%;
+  color: white;
+  padding: 20px;
+  background-color: #330033; /*dark purple*/
+}
+
+/*right column*/
+.right {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+/*Create two unequal columns class "column2" that floats next to each other*/
+.column2 {
+  float: left;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/*class "left2" column*/
+.left2 {
+  width: 70%;
+  color: white;
+  padding: 20px;
+  background-color: #38004d; /*dark purple*/
+}
+
+/*class "right2" column*/
+.right2 {
+  width: 30%;
+  padding: 15px;
+  text-align: center;
+  background-color: #38004d; /*dark purple*/
+  color: white;
+}
+
+/*column part*/
+.evcolumn {  
+  float: left;
+  width: 100%;
+}
+
+/*3 column part: EVENTS*/
+.evcolumn2 {
+  float: left;
+  width: 33.33%;
+  padding: 30px;
+  background-color: white;
+}
+
+/*overflow (t&c, privacy policy)*/
+div.overflow {
+  background-color: #e6ccff; /*light blueish purple*/
+  width: 1270px;
+  height: 400px;
+  padding: 10px;
+  border: 2px solid purple;
+  overflow: scroll; /*overflow property specifies what should happen if content overflows an element's box*/
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/*table data*/
+td {
+  width: 280px;
+  text-align: center;
+  padding: 5px;
+}
+
+td.a { /*EVENT table data part*/ 
+  width: 60%;
+  text-align: left;
+  padding: 20px;
+}
+
+td.b { /*INDEX & EVENT table data part*/ 
+  width: 33.33%;
+  text-align: left;
+  padding: 20px;
+  background-color: #ffccff;
+  text-align: center;
+}
+
+
+ul.a { /*unordered list*/
+  list-style-type: square;
+}
+
+/*gallery video*/
+video {
+  width: 620px;
+  height: 340px;
+}
+
+/*form part: Submit button*/
+input[type=submit] {
+  background-color: #8f246b; /*dark purple*/
+  color: white;
+  padding: 12px 20px;
+  border: none;
+}
+
+/*form part: Submit button when hover*/
+input[type=submit]:hover {
+  background-color: grey;
+}
+
+/*star rating (feedback)*/
+.rating > span:hover:before {
+   content: "\2605"; /*black star code*/
+   position: absolute; /*with absolute positioning, an element can be placed anywhere on a page*/
+}
+.rating {
+  unicode-bidi: bidi-override; /*used together with the direction property to set or return whether the text 
+  should be overridden to support multiple languages in the same document*/
+  direction: rtl; /*direction goes from right to left*/
+  float: left;
+  font-size: 48px;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605"; /*black star code*/
+   position: absolute;
+   color: yellow;
+}
+
+/*image */
+.gifimg {
+  background-color: #bf80ff;
+  width: 100%;
+  padding: 20px;
+}
+
+/*background property for "card" class*/
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/*background property for "card1" class*/
+.card1 {
+  background-color: #d6c2c2; /*soft purple (keladi)*/
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/*background property for "card2" class*/
+.card2 {
+  background-color: #250033; /*dark purple*/
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+.center {
+  max-width: 1700px;
+  margin: auto;
+}
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/*content: Gallery part */
+.content {
+  background-color: #d6c2c2; /*soft purple (keladi)*/
+  padding: 10px;
+  width: 300px;
+}
+
+/*clear floats after the columns*/
+.row:after {
+  content: "";
+  display: table; /*display values that force non-table elements to behave like table elements*/
+  clear: both;
+}
+
+/* Footer */
+footer{
+  padding: 20px;
+  text-align: center;
+  background: #ddd; /*grey*/
+  margin-top: 5px;
+  height: 130px;
+}
+
+.footer-distributed{
+  background-color:#1E1E1E; /*light purple*/
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12); /* attaches shadows to an element*/
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Times New Roman";
+  font: "Times New Roman" 10px sans-serif;
+ 
+  padding: 15px 15px;
+  margin-top: 5%;
+  color: white;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-right{
+  display: inline-block; /*will set inline with the natural flow of text (on the “baseline”)*/
+  vertical-align: top; /*position of vertical*/
+}
+ 
+.footer-distributed .footer-left{ /*left side footer*/
+  width: 40%;
+  text-align: left;
+  margin-top: 20px;
+}
+ 
+.footer-distributed .footer-right{ /*right side footer*/
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+.footer-distributed .footer-links{ /*link in footer*/
+  color:  black;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+ 
+.footer-distributed .footer-links a{ /*a href (hyperlink)*/
+  display: inline-block; /*will set inline with the natural flow of text (on the “baseline”)*/
+  line-height: 1.8;
+  text-decoration: none; /*no underline*/
+  color:  inherit; /*specifies that a property should inherit its value from its parent element.*/
+}
+ 
+ /*responsive website element*/
+@media (max-width: 880px) { /*@media rule is used in media queries to apply different styles for different media types/devices*/
+ 
+  .footer-distributed{
+    font: bold 10px sans-serif;
+  
+  }
+ 
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+ 
+  .main {
+    line-height: normal;
+    font-size: auto;
+  }
+ 
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
